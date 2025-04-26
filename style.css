@@ -1,0 +1,208 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    background-color:black;
+    animation-name:colorchange ;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-delay: 4s;
+    animation-direction: forwards;
+    animation-fill-mode: forwards;
+}
+
+#photo {
+    display:inline-block;
+    margin-top:55px;
+    margin-left: 50px;
+    height:1500px;
+    width: 1500px;
+    display: inline-block;
+    background-image: url(image.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 600px;
+    top:70px;
+    z-index: 1;
+    animation-name: shifting, invi,heightadjust;
+    animation-duration: 3.1s, 3s,3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-delay: 4s, 0s,4s;
+    animation-direction: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes heightadjust{
+    from{
+        height:1500px;
+        width: 1500px;
+    }
+    to{
+        height:500px;
+        width:500px;
+    }
+    
+}
+@keyframes colorchange{
+    from{
+        background-color:black;
+    }
+    to{
+        background-color: #DDE6ED;
+    }
+}
+@keyframes opa{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+@keyframes invi{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+@keyframes shifting{
+    from{
+        left:600;
+        top:70px;
+    }
+    to{
+        left:0px;
+        top:0px;
+    }
+}
+.main {
+    height: 410px;
+    display: flex;
+}
+
+#intro {
+    margin-top: 100px;
+    color: white;
+    margin-left: 50px;
+    display: inline-block;
+
+}
+
+#name {
+    color:#F14A00;
+    opacity: 0;
+    animation-name: opa;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-delay: 5.6s;
+    animation-direction: forwards;
+    animation-fill-mode: forwards;
+    font-size: 80px;
+    z-index: 0;
+}
+
+#exa {
+    margin-right: 50px;
+    font-size: 25px;
+    text-transform: capitalize;
+    opacity: 0;
+    animation-name: opa;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-delay: 7.3s;
+    animation-direction: forwards;
+    animation-fill-mode: forwards;
+    z-index: 0;
+    color:#27374D;
+    border-bottom:2px solid black;
+}
+
+#name,
+#exa {
+    line-height: 35px;
+}
+
+.cont {
+    opacity: 0;
+    height: 200px;
+    color: white;
+    animation-name: opa;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-delay: 10s;
+    animation-direction: forwards;
+    animation-fill-mode: forwards;
+}
+
+#center {
+    text-decoration: underline;
+    text-align: center;
+    color:#FF6500;
+}
+
+.arrange {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.data {
+    font-size: 25px;
+    text-transform: capitalize;
+    color:#27374D;
+}
+.expertise{
+    color:white;
+    display:flex;
+    justify-content: space-around;
+    margin-top:10px;
+    height:300px;
+    opacity:0;
+    animation-name: opa;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-delay: 9s;
+    animation-direction: forwards;
+    animation-fill-mode: forwards;
+}
+.skill{
+    height:500px;
+    width:800px;
+    font-size:25px;
+}
+#first{
+    text-decoration: underline;
+    text-align:center;
+    color:#FF6500;
+}
+#second{
+    text-decoration: underline;
+    text-align:center;
+    color:#FF6500;
+}
+.projects{
+    height:500px;
+    width:800px;
+    font-size:25px;
+}
+.list{
+    display:inline-block;
+}
+li{
+    line-height:50px;
+    color:#27374D;
+   
+}
+li:hover{
+    font-size:27px;
+    transition-duration: 0.3s;
+    
+}
